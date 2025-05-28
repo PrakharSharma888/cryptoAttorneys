@@ -28,7 +28,7 @@ const TeamSection = () => {
       name: "Arumesh Yadav",
       role: "Founder", 
       image: "https://ik.imagekit.io/sq77wjdbn/Arumesh%20Yadav.png?updatedAt=1748412442853",
-      bio: "Arumesh Yadav leads our practice with over 6 years of experience in corporate law and international business regulations. Her strategic approach has helped numerous clients navigate complex legal challenges successfully.",
+      bio: "Arumesh Yadav is a dedicated partner at our firm, bringing over 6 years of focused experience in business and corporate law. Known for his sharp legal insight and client-centric approach, Shreyansh has successfully advised a diverse range of clients on regulatory compliance, transactional structuring, and strategic legal planning. His commitment to excellence and deep understanding of commercial law make him a trusted advisor in the ever-evolving business landscape.",
       education: ["B.A. LL.B. (Hons.)"],
       specializations: ["Corporate Law", "Mergers & Acquisitions", "International Business"],
       social: {
@@ -42,7 +42,7 @@ const TeamSection = () => {
       name: "Swati Singh",
       role: "Founder",
       image: "https://ik.imagekit.io/sq77wjdbn/Snap%202.png?updatedAt=1748412441892",
-      bio: "Swati Singh leads our practice with over 4 years of experience in corporate law and international business regulations. Her strategic approach has helped numerous clients navigate complex legal challenges successfully.",
+      bio: "Swati Singh is a dedicated tax consultant at our firm, bringing over 4 years of focused experience in business and corporate law. Known for his sharp legal insight and client-centric approach, Shushant has successfully advised a diverse range of clients on tax compliance, transactional structuring, and strategic financial planning. His commitment to excellence and deep understanding of tax and commercial law make him a trusted advisor in the ever-evolving business landscape",
       education: ["B.A. LL.B. (Hons.)"],
       specializations: ["Corporate Law", "Mergers & Acquisitions", "International Business"],
       social: {

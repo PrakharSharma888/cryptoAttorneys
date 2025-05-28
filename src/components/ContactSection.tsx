@@ -60,22 +60,22 @@ const ContactSection = () => {
     {
       icon: <MapPin className="h-5 w-5 text-[#BF9B30]" />,
       title: "Visit Us",
-      details: ["1234 Legal Avenue", "New York, NY 10001"],
+      details: ["14/H/11", "Ratan lal nagar, Kanpur", "Uttar Pradesh, India"],  
     },
     {
       icon: <Phone className="h-5 w-5 text-[#BF9B30]" />,
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      details: ["+91 8896663644"],
     },
     {
       icon: <Mail className="h-5 w-5 text-[#BF9B30]" />,
       title: "Email Us",
-      details: ["info@lexcounsel.com", "support@lexcounsel.com"],
+      details: ["info@cryptoattorey.com"],
     },
     {
       icon: <Clock className="h-5 w-5 text-[#BF9B30]" />,
       title: "Working Hours",
-      details: ["Monday - Friday: 9AM - 6PM", "Saturday: 10AM - 2PM"],
+      details: ["24x77"],
     },
   ];
 
@@ -344,7 +344,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <div className="mt-16 bg-white rounded-xl shadow-md overflow-hidden h-80">
+        {/* <div className="mt-16 bg-white rounded-xl shadow-md overflow-hidden h-80">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6044.41965738662!2d-74.01026827896535!3d40.71274837842832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a17bf8bad65%3A0x3a9c409db5dbf15f!2sNew%20York%20County%20Supreme%20Court!5e0!3m2!1sen!2sus!4v1689781507942!5m2!1sen!2sus"
             width="100%"
@@ -354,7 +354,7 @@ const ContactSection = () => {
             loading="lazy"
             title="Crypto Attorney's Office Location"
           ></iframe>
-        </div>
+        </div> */}
       </div>
     </section>
   );

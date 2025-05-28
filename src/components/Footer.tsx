@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="ml-2 text-xl font-bold">Crypto Attorney's</span>
             </div>
             <p className="text-white/70 mb-6">
-              Providing exceptional legal services with integrity, expertise, and dedication to clients' success since 1998.
+              We deal with the law so you can focus on the codes and Company
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white/70 hover:text-white transition-colors duration-300">
