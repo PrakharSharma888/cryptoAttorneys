@@ -66,82 +66,7 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <Briefcase className="h-6 w-6" />,
-      title: "Web3 & Blockchain Legal Services",
-      expandable: true,
-      description: [
-        {
-          text: "Token Structuring & Documentation",
-          subpoints: [
-            "Token utility vs. security analysis",
-            "Token purchase agreements and whitepaper disclaimers",
-            "SAFT (Simple Agreement for Future Tokens) preparation",
-            "Legal opinions on token classification and jurisdictional risks",
-          ],
-        },
-        {
-          text: "DAO Structuring & Legal Wrappers",
-          subpoints: [
-            "Formation of LLCs, foundations, and hybrid structures for DAOs",
-            "Drafting governance frameworks and contributor agreements",
-            "Fiduciary responsibility guidance for DAO stewards and multisig signers",
-          ],
-        },
-        {
-          text: "Platform & Protocol Legal Frameworks",
-          subpoints: [
-            "Terms of use, community guidelines, privacy policies",
-            "API terms and licensing for infrastructure or tooling protocols",
-            "Content moderation and liability disclaimers for dApps and marketplaces",
-          ],
-        },
-        {
-          text: "NFT and IP Protection",
-          subpoints: [
-            "NFT minting rights and ownership structuring",
-            "Licensing terms for creative IP, art, and music NFTs",
-            "Royalty and resale right agreements",
-          ],
-        },
-        {
-          text: "DEX/CEX Compliance & Risk Management",
-          subpoints: [
-            "Jurisdictional regulatory mapping",
-            "AML/KYC program development",
-            "Risk mitigation strategies for automated market makers (AMMs) and liquidity pools",
-          ],
-        },
-      ],
-    },
-    {
-      icon: <FileText className="h-6 w-6" />,
-      title: "Crypto Taxation & Cross-Border Structuring",
-      description: [
-        "Cross-border tax strategy and jurisdictional tax mapping",
-        "Income, capital gains, and staking/airdrop tax treatment",
-        "Tax-efficient entity and foundation structuring (onshore/offshore)",
-        "Corporate tax planning for exchanges, DAOs, and NFT platforms",
-        "Legal structuring for token vesting, unlocks, and liquidity events",
-        "Personal tax strategy for founders, token holders, and investors",
-        "Regulatory risk mitigation through robust tax compliance frameworks",
-      ],
-    },
-    {
-      icon: <Users className="h-6 w-6" />,
-      title: "Regulatory Compliance & International Licensing",
-      description: [
-        "Jurisdiction selection and comparative legal analysis",
-        "VASP licensing (EU, UAE, BVI, Cayman Islands, Singapore, Hong Kong, etc.)",
-        "AML/KYC framework development and internal policy creation",
-        "Securities classification and exemption strategies",
-        "E-money, payment, and custodial license advisory",
-        "Data privacy compliance (GDPR, CCPA, PDPA, etc.)",
-        "International product compliance for mobile/web apps",
-        "Regulator engagement and formal communication support",
-      ],
-    },
-    {
-      icon: <Building className="h-6 w-6" />,
-      title: "Contract Management",
+      title: "Contract Drafting",
       expandable: true,
       description: [
         {
@@ -156,7 +81,6 @@ const ServicesSection = () => {
           text: "Token and Financing Instruments",
           subpoints: [
             "SAFTs (Simple Agreements for Future Tokens)",
-            "SAFEs (Simple Agreements for Future Equity)",
             "Convertible notes and subscription agreements",
             "Investor side letters and advisory share agreements",
           ],
@@ -192,55 +116,116 @@ const ServicesSection = () => {
       ],
     },
     {
-      icon: <Scale className="h-6 w-6" />,
-      title: "Regulatory Compliance & International Structuring",
+      icon: <FileText className="h-6 w-6" />,
+      title: "TAXATION",
+      description: [
+        "Cross-border tax strategy and jurisdictional tax mapping",
+        "Income, capital gains, and staking/airdrop tax treatment",
+        "Tax-efficient entity and foundation structuring (onshore/offshore)",
+        "Corporate tax planning for exchanges, DAOs, and NFT platforms",
+        "Legal structuring for token vesting, unlocks, and liquidity events",
+        "Personal tax strategy for founders, token holders, and investors",
+        "Regulatory risk mitigation through robust tax compliance frameworks",
+      ],
+    },
+    {
+      icon: <Users className="h-6 w-6" />,
+      title: "Corporate Structuring & Incorporation",
+      description: [
+        "Strategic advice on domestic and cross-border corporate structuring, along with regulatory and licensing assessments tailored to the project's scope and jurisdiction",
+        "Drafting and consulting on inter-company agreements to evaluate, allocate, and manage legal and business risks",
+        "Guidance on securing regulatory approvals, licenses, and ensuring compliance with relevant legal requirements",
+        "Advisory on corporate restructuring, mergers & acquisitions, and other related transactions",
+        "Liaising and providing support for entity formation in international jurisdictions",
+      ],
+    },
+    {
+      icon: <Building className="h-6 w-6" />,
+      title: "FINTECH LAW ADVISORY",
       expandable: true,
       description: [
         {
-          text: "Jurisdiction Selection & Entity Structuring",
+          text: "Regulatory Licensing & Registration Advisory",
           subpoints: [
-            "Comparative jurisdiction analysis for crypto and tech companies",
-            "Formation of onshore and offshore entities (LLCs, foundations, Ltd., etc.)",
-            "Establishment of IP holding companies and treasury structures",
+            "Guidance on obtaining necessary regulatory licenses and registrations for financial services businesses, including payment systems, digital wallets, lending platforms, and alternative investment funds (AIFs) across multiple jurisdictions",
           ],
         },
         {
-          text: "Regulatory Licensing & Exemptions",
+          text: "Business Model & Product Review",
           subpoints: [
-            "VASP registration and compliance programs",
-            "Crypto exchange and wallet compliance frameworks",
-            "Legal structuring for unregistered token offerings under exemptions",
+            "Legal review and advisory on proposed business models, products, and service offerings to ensure compliance with local and international financial regulations, including anti-money laundering (AML), data protection, consumer protection, and financial services laws.",
           ],
         },
         {
-          text: "Data, Privacy, and Financial Conduct Compliance",
+          text: "Foreign Exchange Management Act (FEMA) Compliance",
           subpoints: [
-            "GDPR, CCPA, and cross-border data protection",
-            "E-money, payments, and consumer protection regulation",
-            "AML/KYC program design and policy drafting",
+            "Advisory services focused on international cross-border transactions, foreign investments, and compliance with global foreign exchange regulations",
           ],
         },
         {
-          text: "Founder & Team Liability Protection",
+          text: "Foreign Direct Investment (FDI) & Corporate Restructuring",
           subpoints: [
-            "Shielding individuals from personal liability",
-            "Implementing corporate governance safeguards",
-            "Managing legal risks for contributors, core teams, and advisors",
+            "Legal review of corporate structures, FDI compliance, and restructuring strategies to optimize your FinTech company’s global operations and investment opportunities",
+          ],
+        },
+        {
+          text: "Investment Transaction Advisory",
+          subpoints: [
+            "Providing legal insights into funding strategies, investment agreements, and corporate governance for FinTech startups and established companies",
+          ],
+        },
+        {
+          text: "Overseas Direct Investment (ODI) Compliance & Advisory",
+          subpoints: [
+            "Assistance with navigating the legal complexities of overseas investments, ensuring full compliance with local regulations and international trade laws",
           ],
         },
       ],
     },
     {
-      icon: <FileText className="h-6 w-6" />,
-      title: "Policy Advisory & Legal Research",
+      icon: <Scale className="h-6 w-6" />,
+      title: "Token Launch ICO / IDO / IEO / ILO / INO",
+      expandable: false,
       description: [
-        "Policy papers, regulatory whitepapers, and industry submissions",
-        "Legal research for public-private initiatives and digital economy bills",
-        "Consultation support for legislative and regulatory change proposals",
-        "Guidance on digital asset sandbox programs and innovation hubs",
-        "Stakeholder engagement strategies (regulators, ministries, trade bodies)",
-        "Participation in industry consultations and compliance coalitions",
-        "Strategic positioning for public perception, lobbying, and advocacy",
+        {
+          text: "Legal review and analysis of token and its possible characterisation",
+        },
+        {
+          text: "Advisory on Token Structuring & Documentation",
+        },
+        {
+          text: "DAO Structuring & Legal Wrappers",
+        },
+        {
+          text: "Platform & Protocol Legal Frameworks",
+        },
+        {
+          text: "NFT and IP Protection",
+        },
+        {
+          text: "DEX/CEX Compliance & Risk Management",
+        },
+        {
+          text: "Advisory services relating to appropriate corporate structuring and incorporation of the token issuing entity",
+        },
+        {
+          text: "Preparation of documentation and liaising with centralized and decentralized exchanges for token listings",
+        },
+        {
+          text: "Comprehensive review of tokenomics and evaluation of security-related concerns",
+        },
+      ],
+    },
+    {
+      icon: <FileText className="h-6 w-6" />,
+      title: "Policy & Research",
+      description: [
+        "In-depth, sector-specific research​",
+        "Exploration and promotion of blockchain use-cases",
+        "Policy analysis and advocacy initiatives",
+        "Social impact assessments for blockchain and emerging technologies",
+        "Stakeholder mapping and engagement strategies​)",
+        "Legal and policy analysis across jurisdictions",
       ],
     },
     {
@@ -333,11 +318,18 @@ const ServicesSection = () => {
             Strategic Legal Support for Decentralized Innovation
           </h3>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            The Web3 ecosystem presents transformative opportunities-and complex
-            legal challenges. At [Firm Name], we deliver comprehensive legal
-            support to stakeholders across the blockchain space, including
-            infrastructure providers, token projects, decentralized protocols,
-            exchanges, NFT platforms, and DAOs.
+            At <b>Crypto Attorneys</b>, we provide future-facing tech legal
+            services for businesses operating at the progressive of technology,
+            innovation, and global finance. Our team brings deep experience
+            across traditional legal practice areas and emerging sectors like
+            blockchain, digital assets, decentralized finance (DeFi), and Web3.
+            We serve clients at every stage—from startup formation to scaling
+            internationally—offering tailored legal counsel that ensures
+            compliance, reduces risk, and supports long-term growth. Our
+            services are designed to meet the unique challenges of modern
+            enterprises, with tailored legal solutions in the fields of Crypto
+            and Web3, contract law, regulatory compliance, international
+            structuring, legal research, and startup support.
           </p>
         </div>
 

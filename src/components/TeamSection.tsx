@@ -25,10 +25,10 @@ const TeamSection = () => {
   const teamMembers: TeamMember[] = [
     {
       id: 1,
-      name: "Achyut Singh",
-      role: "Partner", 
-      image: "../../Assets/achyut.jpeg",
-      bio: "Sarah leads our practice with over 15 years of experience in corporate law and international business regulations. Her strategic approach has helped numerous clients navigate complex legal challenges successfully.",
+      name: "Arumesh Yadav",
+      role: "Founder", 
+      image: "https://ik.imagekit.io/sq77wjdbn/Arumesh%20Yadav.png?updatedAt=1748412442853",
+      bio: "Arumesh Yadav leads our practice with over 6 years of experience in corporate law and international business regulations. Her strategic approach has helped numerous clients navigate complex legal challenges successfully.",
       education: ["B.A. LL.B. (Hons.)"],
       specializations: ["Corporate Law", "Mergers & Acquisitions", "International Business"],
       social: {
@@ -39,40 +39,40 @@ const TeamSection = () => {
     },
     {
       id: 2,
-      name: "Saadiya Sadiq",
-      role: "Partner, Business & Corporate Law",
-      image: "../../Assets/1f202e5c-7433-4670-a8c0-ff42094cfbfc.jpeg",
-      bio: "Saadiya Sadiq is a dedicated partner at our firm, bringing over 4 years of focused experience in business and corporate law. Known for her sharp legal insight and client-centric approach, Saadiya has successfully advised a diverse range of clients on regulatory compliance, transactional structuring, and strategic legal planning. Her commitment to excellence and deep understanding of commercial law make her a trusted advisor in the ever-evolving business landscape.",
-      education: ["Bachelor of Commerce (B.Com)", "Bachelor of Laws (LL.B)", "Master of Laws (LL.M)"],
-      specializations: ["Business Law", "Corporate Law"],
+      name: "Swati Singh",
+      role: "Founder",
+      image: "https://ik.imagekit.io/sq77wjdbn/Snap%202.png?updatedAt=1748412441892",
+      bio: "Swati Singh leads our practice with over 4 years of experience in corporate law and international business regulations. Her strategic approach has helped numerous clients navigate complex legal challenges successfully.",
+      education: ["B.A. LL.B. (Hons.)"],
+      specializations: ["Corporate Law", "Mergers & Acquisitions", "International Business"],
       social: {
         linkedin: "#",
         twitter: "#",
-        email: "michael@lexcounsel.com"
+        email: "sarah@lexcounsel.com"
       }
     },
     {
       id: 3,
-      name: "Shreyansh Raj",
-      role: "Partner",
-      image: "../../Assets/shre2.jpeg",
-      bio: "Shreyansh Raj is a dedicated partner at our firm, bringing over 6 years of focused experience in business and corporate law. Known for his sharp legal insight and client-centric approach, Shreyansh has successfully advised a diverse range of clients on regulatory compliance, transactional structuring, and strategic legal planning. His commitment to excellence and deep understanding of commercial law make him a trusted advisor in the ever-evolving business landscape.",
-      education: ["Bachelor of Arts, Bachelor of Laws (B.A. LL.B)", "Master of Laws (LL.M) - Specialization in Constitutional Law and Policy Making"],
-      specializations: ["Constitutional Law", "Corporate Law", "Policy Making", "Regulatory Compliance", "Transactional Structuring", "Strategic Legal Planning"],
+      name: "Achyut Singh",
+      role: "Partner", 
+      image: "https://ik.imagekit.io/sq77wjdbn/Snap%202-3.png?updatedAt=1748412753368",
+      bio: "Achyut leads our practice with 6 years of experience in corporate law and international business regulations. His strategic approach has helped numerous clients navigate complex legal challenges successfully.",
+      education: ["B.A. LL.B. (Hons.)"],
+      specializations: ["Corporate Law", "Mergers & Acquisitions", "International Business"],
       social: {
         linkedin: "#",
         twitter: "#",
-        email: "michael@lexcounsel.com"
+        email: "sarah@lexcounsel.com"
       }
     },
     {
       id: 4,
-      name: "Shushant Raj",
+      name: "Saadiya Sadiq",
       role: "Partner",
-      image: "../../Assets/shu.jpeg",
-      bio: "Shushant Raj is a dedicated tax consultant at our firm, bringing over 4 years of focused experience in business and corporate law. Known for his sharp legal insight and client-centric approach, Shushant has successfully advised a diverse range of clients on tax compliance, transactional structuring, and strategic financial planning. His commitment to excellence and deep understanding of tax and commercial law make him a trusted advisor in the ever-evolving business landscape",
-      education: ["Bachelor of Arts, Bachelor of Laws (B.A. LL.B - 5-year program)"],
-      specializations: ["Tax Law", "Regulatory Compliance", "Corporate Law", "Regulatory Compliance", "Transactional Structuring", "Strategic Financial and Legal Planning"],
+      image: "https://ik.imagekit.io/sq77wjdbn/Snap%202-2.png?updatedAt=1748412753302",
+      bio: "Saadiya Sadiq is a dedicated partner at our firm, bringing over 4 years of focused experience in business and corporate law. Known for her sharp legal insight and client-centric approach, Saadiya has successfully advised a diverse range of clients on regulatory compliance, transactional structuring, and strategic legal planning. Her commitment to excellence and deep understanding of commercial law make her a trusted advisor in the ever-evolving business landscape.",
+      education: ["Bachelor of Commerce (B.Com)", "Bachelor of Laws (LL.B)", "Master of Laws (LL.M)"],
+      specializations: ["Business Law", "Corporate Law"],
       social: {
         linkedin: "#",
         twitter: "#",
@@ -93,12 +93,13 @@ const TeamSection = () => {
 
   const tabs = [
     { id: 'all', label: 'All' },
-    { id: 'partners', label: 'Partners' },
-    // { id: 'associates', label: 'Associates' }
+    { id: 'Founders', label: 'Founders' },
+    { id: 'partners', label: 'Partners' }
   ];
 
   const filteredMembers = teamMembers.filter(member => {
     if (activeTab === 'all') return true;
+    if (activeTab === 'Founders') return member.role.includes('Founder');
     if (activeTab === 'partners') return member.role.includes('Partner');
     // if (activeTab === 'associates') return member.role === 'Associate';
     return true;

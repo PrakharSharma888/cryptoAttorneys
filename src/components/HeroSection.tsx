@@ -37,7 +37,7 @@ const HeroSection = () => {
             <div className="relative w-full max-w-md mx-auto">
               <div className="absolute inset-0 bg-[#BF9B30] rounded-xl transform rotate-3 scale-105 opacity-20 blur-xl"></div>
               <img 
-                src="https://images.pexels.com/photos/5668774/pexels-photo-5668774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
+                src="https://ik.imagekit.io/sq77wjdbn/cryptu.webp?updatedAt=1748412440082" 
                 alt="Legal professionals meeting" 
                 className="relative z-10 w-full h-auto rounded-xl shadow-xl"
               />
