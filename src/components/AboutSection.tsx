@@ -62,11 +62,11 @@ const AboutSection = () => {
               About Crypto Attorney's
             </h2>
             <p className="text-gray-600 mb-8">
-              At [Firm Name], we provide future-facing legal services for
+              At Crypto Attorney's, we provide future-facing legal services for
               businesses operating at the progressive of technology, innovation,
               and global finance. Our team brings deep experience across
               traditional legal practice areas and emerging sectors like
-              blockchain, digital assets, decentralized finance (DeFi), and
+              blockchain, digital assets, crypto,decentralized finance (DeFi), and
               Web3.
             </p>
             <p className="text-gray-600 mb-8">

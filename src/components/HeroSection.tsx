@@ -16,7 +16,7 @@ const HeroSection = () => {
               Expert Legal Solutions for Your Success
             </h1>
             <p className="text-white/80 text-lg md:text-xl mb-8 max-w-2xl mx-auto lg:mx-0">
-              Our team of experienced attorneys is dedicated to providing exceptional legal services tailored to your specific needs.
+              We handle the law—so you can build with confidence.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <a 

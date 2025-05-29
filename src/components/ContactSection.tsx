@@ -80,15 +80,16 @@ const ContactSection = () => {
   ];
 
   const services = [
-    "Corporate Law",
-    "Contract Law",
-    "Family Law",
-    "Real Estate Law",
-    "Litigation",
-    "International Law",
-    "Intellectual Property",
-    "Criminal Defense",
-    "Other",
+    "Taxation",
+    "Incorporation",
+    "FinTech Law",
+    "Token Launch",
+    "Tech & Privacy",
+    "Contract Drafting",
+    "Regulatory Compliance",
+    "Policy & Research",
+    "Sub-sectors: DeFi, NFTs, DAOs, etc.",
+    "Others"
   ];
 
   return (

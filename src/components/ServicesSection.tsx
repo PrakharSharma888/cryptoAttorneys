@@ -312,7 +312,7 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0A2540] mb-2">
-            Web3 & Blockchain Legal Services
+            Crypto, Web3 & Blockchain Legal Services
           </h2>
           <h3 className="text-xl font-semibold text-[#0A2540] mb-4">
             Strategic Legal Support for Decentralized Innovation

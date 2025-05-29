@@ -67,22 +67,34 @@ const Footer = () => {
           </div>
           
           <div className="md:col-span-2">
-            <h3 className="text-lg font-bold mb-4">Practice Areas</h3>
+            <h3 className="text-lg font-bold mb-4">Practice Areas</h3> 
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Corporate Law</a>
+                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Taxation</a>
               </li>
               <li>
-                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Family Law</a>
+                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Incorporation</a>
               </li>
               <li>
-                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Real Estate</a>
+                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">FinTech Law</a>
               </li>
               <li>
-                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Litigation</a>
+                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Token Launch</a>
               </li>
               <li>
-                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Intellectual Property</a>
+                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Tech & Privacy</a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Contract Drafting</a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Regulatory Compliance</a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Policy & Research</a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/70 hover:text-white transition-colors duration-300">Sub-sectors: DeFi, NFTs, DAOs, etc.</a>
               </li>
             </ul>
           </div>
