@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Briefcase,
   FileText,
@@ -62,6 +62,19 @@ const ServiceCard = ({
 
 const ServicesSection = () => {
   const [popupIndex, setPopupIndex] = useState(null);
+
+  // Add this to your component
+  useEffect(() => {
+    if (popupIndex !== null) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [popupIndex]);
 
   const services = [
     {
@@ -244,65 +257,74 @@ const ServicesSection = () => {
   ];
 
   const Popup = ({ title, description, onClose }) => (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm transition-all duration-300">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm transition-all duration-300 p-4">
       {/* Popup box */}
-      <div className="relative bg-white/80 backdrop-blur-lg rounded-2xl shadow-2xl border border-[#BF9B30]/30 max-w-lg w-full p-8 animate-fade-in">
-        <button
-          className="absolute top-4 right-4 p-2 rounded-full bg-white/70 hover:bg-[#BF9B30]/20 border border-[#BF9B30]/30 shadow transition-all duration-200"
-          onClick={onClose}
-          aria-label="Close"
-        >
-          <X className="h-6 w-6 text-[#BF9B30] hover:text-[#0A2540] transition-colors" />
-        </button>
-        <h3 className="text-2xl font-extrabold text-[#0A2540] mb-4">{title}</h3>
-        <div className="text-gray-700 max-h-[60vh] overflow-y-auto pr-2">
-          {Array.isArray(description)
-            ? description.map((desc, idx) =>
-                typeof desc === "string" ? (
-                  <p key={idx} className="mb-3">
-                    {desc}
-                  </p>
-                ) : (
-                  <div key={idx} className="mb-4">
-                    <p className="font-semibold text-[#BF9B30]">{desc.text}</p>
-                    {desc.subpoints && (
-                      <ul className="ml-5 mt-1 list-disc text-sm text-[#0A2540]/80">
-                        {desc.subpoints.map((sub, subIdx) => (
-                          <li key={subIdx} className="mb-1">
-                            {sub}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
+      <div className="relative bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl border border-[#BF9B30]/30 max-w-2xl w-full max-h-[90vh] flex flex-col animate-fade-in">
+        {/* Header - Fixed */}
+        <div className="flex-shrink-0 p-6 pb-4 border-b border-gray-200/50">
+          <button
+            className="absolute top-4 right-4 p-2 rounded-full bg-white/70 hover:bg-[#BF9B30]/20 border border-[#BF9B30]/30 shadow transition-all duration-200"
+            onClick={onClose}
+            aria-label="Close"
+          >
+            <X className="h-5 w-5 text-[#BF9B30] hover:text-[#0A2540] transition-colors" />
+          </button>
+          <h3 className="text-2xl font-extrabold text-[#0A2540] pr-12">
+            {title}
+          </h3>
+        </div>
+
+        {/* Scrollable Content */}
+        <div className="flex-1 overflow-y-auto p-6 pt-4">
+          <div className="text-gray-700 space-y-4">
+            {Array.isArray(description)
+              ? description.map((desc, idx) =>
+                  typeof desc === "string" ? (
+                    <p key={idx} className="leading-relaxed">
+                      {desc}
+                    </p>
+                  ) : (
+                    <div key={idx} className="">
+                      <p className="font-semibold text-[#BF9B30] mb-2">
+                        {desc.text}
+                      </p>
+                      {desc.subpoints && (
+                        <ul className="ml-5 space-y-1 list-disc text-sm text-[#0A2540]/80">
+                          {desc.subpoints.map((sub, subIdx) => (
+                            <li key={subIdx} className="leading-relaxed">
+                              {sub}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  )
                 )
-              )
-            : null}
+              : null}
+          </div>
         </div>
       </div>
+
       {/* Click outside to close */}
-      <div
-        className="fixed inset-0 z-40"
-        onClick={onClose}
-        style={{ pointerEvents: "auto" }}
-      />
+      <div className="fixed inset-0 z-40" onClick={onClose} />
+
       {/* Animation */}
       <style>
         {`
-          .animate-fade-in {
-            animation: fadeInUp 0.35s cubic-bezier(.39,.575,.565,1.000) both;
+        .animate-fade-in {
+          animation: fadeInUp 0.35s cubic-bezier(.39,.575,.565,1.000) both;
+        }
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(40px) scale(0.98);
           }
-          @keyframes fadeInUp {
-            0% {
-              opacity: 0;
-              transform: translateY(40px) scale(0.98);
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0) scale(1);
-            }
+          100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
           }
-        `}
+        }
+      `}
       </style>
     </div>
   );
